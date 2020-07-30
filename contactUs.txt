@@ -1,0 +1,4 @@
+const contactUsPage = document.querySelector("body");
+window.addEventListener("load", () => {
+    productPage.classList.add("visibility");
+});

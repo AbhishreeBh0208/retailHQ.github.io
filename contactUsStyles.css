@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #000000;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.visibility {
+    opacity: 1;
+}
+
+@media all and (min-width: 768px){
+
+    /*navigation bar*/
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1001;
+}
+
+.logo {
+    font-weight: bolder;
+    letter-spacing: 3.5px;;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2.7em;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+.navlinks li{
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.navlinks li a {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.shopping-cart {
+    font-size: 3em;
+    margin-right: 15px;
+    color: #ffffff      !important;
+}
+
+.navlinks li a::before{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    top: -20%;
+    height: 7px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.navlinks li a:hover::before{ 
+   width: 100%;
+}
+
+.fa {
+    color: #ffffff      !important;
+}
+
+.fa:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.4)  !important;
+    transition: all 0.2s ease;
+}
+
+/*INTRO IMAGE SECTION*/
+.background, .foreground-text {
+    margin-top: 80px;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.background img {
+    width: 100vw;
+    height: 80vh;
+    filter: opacity(0.7) blur(2px);
+}
+
+.foreground-text {
+    text-align: center;
+}
+
+.foreground-text h1 {
+    margin-top: 150px;
+    font-size: 4em;
+}
+
+/*contact us form*/
+.contact-us-form {
+    margin-top: 570px;
+}
+
+.contact-us-form h1 {
+    margin: auto 380px;
+    font-size: 5em;
+}
+
+.contact-us-form input, textarea {
+    margin: 10px 180px;
+    width: 70vw;
+    height: 8vh;
+    outline: none;
+    color: #ffffff;
+    padding: 2px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-us-form textarea {
+    height: 15vh;
+    padding: 15px;
+}
+
+.contact-us-form input:hover,
+.contact-us-form textarea:hover,
+.contact-us-form input:focus,
+.contact-us-form textarea:focus,
+.contact-us-form input:valid,
+.contact-us-form textarea:valid {
+    background-color: #000000;
+    border-bottom: #ffffff 0.5px solid;
+}
+
+.submit-btn {
+    position: relative;
+    margin: 5px 580px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    color: #000000;
+    border-radius: 15px;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer-area {
+    margin-top: 40px;
+    background-color: #646965;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer-area .logo {
+    margin-top: 20px;
+    color: #00bfff;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-area h4 {
+    color: #00bfff;
+}
