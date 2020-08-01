@@ -2,28 +2,33 @@
     <head>
         <meta charset="utf-8">
         <title>Retail.HQ</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="landpageStyle.css" type="text/css"> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!--navigation bar-->
             <div id="navbar">
-                <div class="logo">RETAIL.HQ</div>
+                <a href="index.html"><div class="logo">RETAIL.HQ</div></a>
                 <nav>
                     <div class="navlinks">
                         <ul class="navlinks-list">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="productsTitle.html">Products</a></li>
                             <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </nav>
                 <div class="shopping-cart">
                     <a href="#"><i class =" fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="nav-open-close">
+                    <li><i class="fa fa-bars visibility"></i></li>
+                    <li><i class="fa fa-times"></i></li>
                 </div>
             </div>
         </header>
@@ -37,58 +42,134 @@
                         <img src="cupcakes.jpg" alt="food" id="img2">
                         <img src="headphones.jpg" alt="electronics" id="img3">
                         <h1 class="heading">WHAT'S NEW</h1>
+                        <h2>WHAT'S NEW</h2>
                         <h4>CHECK THEM OUT </h4>
                 </div>
-                <div class="intro-slide new-features">
-                    <h1 class="heading">NEW FEATURES</h1>
-                    <div class="features-grid">
-                        <div class="feature feature-one">
-                            <img src="onlineshopping.png" alt="online shopping">
-                            <h2>Online shopping made easy with our products now available on an online platform. Free returns for wrong, dispatched items.</h2>
-                        </div>
-                        <div class="feature feature-two">
-                            <img src="moneysavings.png" alt="Cash on Delivery">
-                            <h2>Save money by our newly added coupons and discounts for gold members. Also get your first delivery free!</h2>
-                        </div>
-                        <div class="feature feature-three">
-                            <img src="shopping.png" alt="Showrooms">
-                            <h2>New showrooms available in your nearest vicinity. Buy the latest products from top brands at your comfort</h2>
-                        </div>
-                        <div class="feature feature-four">
-                            <img src="delivery.png" alt="delivery tracking">
-                            <h2>Track and time your products when dispatched and guaranteed refund if your deliveries are not up to mark. </h2>
-                        </div>
+                <div class="intro-slide discounts">
+                    <div class="background">
+                        <img src="discount.jpg" alt="discounts">
+                    </div>
+                    <div class="foreground">
+                        <h1>THE END OF</h1>
+                        <h3>Get flat 25% off on purchases over Rs 2,999 and 50% off on purchases over Rs. 4,9999. Get about 30% cashback on every order you place!</h3>
+                        <h1>SEASON SALE</h1>
+                    </div>
+                </div>             
+                <div class="intro-slide new-product-slide-one">
+                    <div class="background">
+                        <img src="electronicSlide.jpg" alt="new electronics">
+                    </div>
+                    <div class="foreground">
+                        <h2>Buy the Latest Electronics at the lowest price</h2>
+                        <h5>Laptops, Smartphones, everything available at your disposal. Find your desired product right here!</h5>
                     </div>
                 </div>
-                <div class="intro-slide explore-around">
-                    <h1 class="heading">EXPLORE</h1>
-                    <div class="explore-grid">
-                        <div class="section new-arrivals">
-                            <h3>NEW ARRIVALS</h3>
-                                <a href="products.html#new-arrivals-in-products"><button class="explore-btn">View now</button></a>
-                        </div>
-                        <div class="section electronics">
-                            <h3>ELECTRONICS</h3>
-                                <a href="products.html#electronics-in-products"><button class="explore-btn">View now</button></a>
-                        </div>
-                        <div class="section food">
-                            <h3>FOOD</h3>
-                                <a href="products.html#food-in-products"><button class="explore-btn">View now</button></a>
-                        </div>
-                        <div class="section furniture">
-                            <h3>FURNITURE</h3>
-                            <a href="products.html#furniture-in-products"><button class="explore-btn">View now</button></a>
-                        </div>
+                <div class="intro-slide new-product-slide-two">
+                    <div class="background">
+                        <img src="foodSlide.jpg" alt="Food">
+                    </div>
+                    <div class="foreground">
+                        <h2>Did someone say Food? Don't worry, we have it all</h2>
+                        <h5>From indian to Italian. please your stomach from all the flavours of the world!</h5>
                     </div>
                 </div>
-                <div class="btn-prev">
-                    <i class="previous fa fa-arrow-left"></i>       
+                <div class="intro-slide new-product-slide-three">
+                    <div class="background">
+                        <img src="furnitureSlide.jpg" alt="new furniture">
+                    </div>
+                    <div class="foreground">
+                        <h2>Planning to re-design your House?</h2>
+                        <h5>You've come at the right place. All modern furniture for your Dream Home!</h5>
+                    </div>
                 </div>
-                <div class="btn-next">
-                    <i class="next fa fa-arrow-right"></i>       
+        </section>
+        <article>
+            <div class="btn-prev">
+                <i class="previous fa fa-arrow-left"></i>       
+            </div>
+            <div class="btn-next">
+                <i class="next fa fa-arrow-right"></i>       
+            </div>
+        </article>
+        <article>
+            <div class="new-features">
+                <h1 class="heading">NEW FEATURES</h1>
+                <div class="features-grid">
+                    <div class="feature feature-one">
+                        <img src="onlineshopping.png" alt="online shopping">
+                        <h2>Online shopping made easy with our products now available on an online platform. Free returns for wrong, dispatched items.</h2>
+                    </div>
+                    <div class="feature feature-two">
+                        <img src="moneysavings.png" alt="Cash on Delivery">
+                        <h2>Save money by our newly added coupons and discounts for gold members. Also get your first delivery free!</h2>
+                    </div>
+                    <div class="feature feature-three">
+                        <img src="shopping.png" alt="Showrooms">
+                        <h2>New showrooms available in your nearest vicinity. Buy the latest products from top brands at your comfort</h2>
+                    </div>
+                    <div class="feature feature-four">
+                        <img src="delivery.png" alt="delivery tracking">
+                        <h2>Track and time your products when dispatched and guaranteed refund if your deliveries are not up to mark. </h2>
+                    </div>
                 </div>
             </div>
-        </section>
+        </article>
+        <article>
+            <div class="explore-around">
+                    <h1 class="heading">EXPLORE</h1>
+                <div class="explore-grid">
+                    <div class="section new-arrivals">
+                        <h3>NEW ARRIVALS</h3>
+                            <a href="products.html#new-arrivals-in-products"><button class="explore-btn">View now</button></a>
+                    </div>
+                    <div class="section electronics">
+                        <h3>ELECTRONICS</h3>
+                            <a href="products.html#electronics-in-products"><button class="explore-btn">View now</button></a>
+                    </div>
+                    <div class="section food">
+                        <h3>FOOD</h3>
+                            <a href="products.html#food-in-products"><button class="explore-btn">View now</button></a>
+                    </div>
+                    <div class="section furniture">
+                        <h3>FURNITURE</h3>
+                        <a href="products.html#furniture-in-products"><button class="explore-btn">View now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+        <footer>
+            <div class="footer-area">
+               <div class="logo">RETAIL.HQ</div>
+               <div class="available">
+                   <h4>Showrooms available in</h4>
+                   <ul>
+                       <li>Delhi</li>
+                       <li>Gurugram</li>
+                       <li>Noida</li>
+                       <li>Bangalore</li>
+                       <li>Hyderabad</li>
+                   </ul>
+               </div>
+               <div class="follow">
+                   <h4>Follow us on</h4>
+                   <div class="social-media">
+                       <i class="fa fa-instagram"></i>
+                       <i class="fa fa-facebook"></i>
+                       <i class="fa fa-twitter"></i>
+                   </div>
+               </div>  
+               <div class="membership-plans">
+                   <h4>Membership</h4>
+                   <ul>
+                       <li>Platinum member: Rs. 500 per month</li>
+                       <li>Gold member: Rs. 450 per month</li>
+                       <li>Premium member: Rs. 350 per month</li>
+                       <li>Member: Rs. 200 per month</li>
+                   </ul>
+               </div>
+           </div>
+        </footer>
         <script src="landpage.js" type="text/javascript"></script>
     </body>
 </html>

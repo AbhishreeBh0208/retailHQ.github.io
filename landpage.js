@@ -4,23 +4,6 @@
         homePage.classList.add("visibility");
     });
 
-    const featureSections = document.querySelectorAll(".feature");
-
-    featureSections[0].addEventListener("animationend", () =>{
-        featureSections[0].classList.add("visibility");
-    });
-
-    featureSections[1].addEventListener("animationend", () =>{
-        featureSections[1].classList.add("visibility");
-    });
-
-    featureSections[2].addEventListener("animationend", () =>{
-        featureSections[2].classList.add("visibility");
-    });
-
-    featureSections[3].addEventListener("animationend", () =>{
-        featureSections[3].classList.add("visibility");
-    });
 
     //hover effect for the sections
     const viewBtn = document.querySelectorAll(".explore-btn"); 
@@ -91,8 +74,8 @@
     console.log(slides);
 
     nextBtn.addEventListener("click", () => {
-        if(slideCount === 3) {
-            slides[2].classList.remove("visibility");
+        if(slideCount === 5) {
+            slides[4].classList.remove("visibility");
             slides[0].classList.add("visibility");
             slideCount = 1
         } else {
@@ -105,11 +88,45 @@
     prevBtn.addEventListener("click", () => {
         if(slideCount === 1) {
             slides[0].classList.remove("visibility");
-            slides[2].classList.add("visibility");
-            slideCount = 3;
+            slides[4].classList.add("visibility");
+            slideCount = 5;
         } else{
             slides[slideCount-1].classList.remove("visibility");
         slides[slideCount-2].classList.add("visibility");
         slideCount--;
         }
+    });
+
+//on-scroll appearance 
+let feature = document.querySelectorAll(".feature");
+let windowPosition = window.innerHeight/1.5;
+console.log(feature);
+
+window.addEventListener("scroll", () => {
+    for (let i=0; i < feature.length; i++){
+        if(feature[i].getBoundingClientRect().top < windowPosition) {
+            feature[i].classList.add("visibility-onscroll");
+        }
+    }
+});
+
+
+//responsive navigation bar
+    const navbarBtnOpen = document.querySelector(".fa-bars")
+    const navbarBtnClose = document.querySelector(".fa-times")
+    const navBar = document.querySelector(".navlinks");
+    const cart = document.querySelector(".fa-shopping-cart");
+
+    navbarBtnOpen.addEventListener("click", () => {
+        navbarBtnOpen.classList.remove("visibility");
+        navbarBtnClose.classList.toggle("visibility");
+        navBar.classList.toggle("on-nav-click");
+        cart.classList.toggle("visibility");
+    });
+
+    navbarBtnClose.addEventListener("click", () => {
+        navbarBtnOpen.classList.toggle("visibility");
+        navbarBtnClose.classList.toggle("visibility");
+        navBar.classList.toggle("on-nav-click");
+        cart.classList.toggle("visibility");
     });
