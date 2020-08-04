@@ -180,7 +180,7 @@ body{
     position: absolute;
     width: 0%;
     top: -20%;
-    height: 7px;
+    height: 1px;
     background-color: #ffffff;
     transition: all 0.3s ease;
 }
